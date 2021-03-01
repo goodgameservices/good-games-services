@@ -57,6 +57,7 @@
 </p>
 
 <a href="#" onclick="signOut();">Sign out</a> 
+<a href="#" onclick="GoHome();">Go to Home</a> 
 <script>
   function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
@@ -65,7 +66,12 @@
     });
       location.reload();
   }
+  
+  function GoHome() {
+    windows.open("");
+    windows.close();
+  }
 
-</script></div></div>
+</script>
   </body>
 </html>
