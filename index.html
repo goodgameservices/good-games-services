@@ -82,5 +82,46 @@
             <img class="img-fluid" src="./image/gg-launcher/home.PNG" alt="" />
         </div>
     </section>
+    <!-- Login-->
+    <section class="about-section text-center" id="login">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-white mb-4">Login</h2>
+                        <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+                    <p class="text-white-50">
+                        <h2>
+                            Account:
+                        </h2>
+                        
+                        <p id="Name">
+                        </p>
+                        
+                        <p id="Email">
+                        </p>
+                        
+                        <p id="ID">
+                        </p>
+                        
+                        <p id="ImageURL">
+                        </p>
+                    </p>
+                </div>
+            </div>
+            <script>
+                function onSignIn(googleUser) {
+                  var profile = googleUser.getBasicProfile();
+                    console.log("Google Account ID: " + profile.getId());
+                    console.log('Google Account Full Name: ' + profile.getName());
+                    console.log("Google Account Image URL: " + profile.getImageUrl());
+                    console.log("Google Account Email: " + profile.getEmail());
+                    document.getElementById("Name").innerHTML = "Name: " + profile.getName();
+                    document.getElementById("Email").innerHTML = "Email: " + profile.getEmail();
+                    document.getElementById("ImageURL").innerHTML = "ImageURL: " + profile.getImageUrl();
+                    document.getElementById("ID").innerHTML = "Account ID: " + profile.getId(); 
+                }  
+                </script>
+        </div>
+    </section>
 </body>
 </html>
