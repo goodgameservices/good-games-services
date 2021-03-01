@@ -123,5 +123,27 @@
             </script>
         </div>
     </section>
+    <!-- Musik Player-->
+    <section class="about-section text-center" id="aboutlauncher">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-white mb-4">Instructions</h2>
+                    <p class="text-white-50">
+                        
+                    </p>
+                </div>
+            </div>
+            <script>
+                var audio = new Audio('./Audio/music/Rettungsschwimmer.mp3');
+                function playPlayer() {
+                    audio.play();
+                }
+                function stopPlayer() {
+                    audio.stop();
+                }
+            </script>
+        </div>
+    </section>
 </body>
 </html>
