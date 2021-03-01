@@ -96,7 +96,7 @@
                     <p class="text-white-50" id="Email"></p>
                     <p class="text-white-50" id="ID"></p>
                     <p class="text-white-50" id="ImageURL"></p>
-                        
+                    <a href="#" onclick="signOut();">Sign out</a> 
                 </div>
             </div>
             <script>
@@ -111,7 +111,16 @@
                     document.getElementById("ImageURL").innerHTML = "ImageURL: " + profile.getImageUrl();
                     document.getElementById("ID").innerHTML = "Account ID: " + profile.getId(); 
                 }  
-                </script>
+
+                function signOut() {
+                  var auth2 = gapi.auth2.getAuthInstance();
+                  auth2.signOut().then(function () {
+                  alert('User signed out.');
+                  location.reload();
+                });
+                }
+
+            </script>
         </div>
     </section>
 </body>
