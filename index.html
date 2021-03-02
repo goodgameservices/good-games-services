@@ -21,6 +21,8 @@
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <!-- Google Login verify Api -->
     <meta name="google-signin-client_id" content="622189447712-t0r0knt6ifo3qcqee0s0mbf1he9ltctj.apps.googleusercontent.com">
+    <!-- Twitch JS -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
 </head>
 <body>
     <!-- Navigation-->
@@ -88,10 +90,15 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2 class="text-white mb-4">Twitch CENiXXX_</h2>
-                    <iframe src="https://player.twitch.tv/?channel=cenixxx_&parent=https://goodgameservices.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+                    <script>
+                        new Twitch.Embed("twitch-embed", {
+                        width: 1070,
+                        height: 500,
+                        channel: "cenixxx_",        
+                      });
+                     </script>
                 </div>
             </div>
-            <img class="img-fluid" src="./image/gg-launcher/home.PNG" alt="" />
         </div>
     </section>
     <!-- twitch aikatsu666-->
@@ -100,10 +107,15 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2 class="text-white mb-4">Twitch Aikatsu666</h2>
-                    <iframe src="https://player.twitch.tv/?channel=aikatsu666&parent=https://goodgameservices.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+                    <script>
+                       new Twitch.Embed("twitch-embed", {
+                       width: 1070,
+                       height: 500,
+                       channel: "aikatsu666",        
+                     });
+                    </script>
                 </div>
-            </div>
-            <img class="img-fluid" src="./image/gg-launcher/home.PNG" alt="" />
+            </div>  
         </div>
     </section>
     <!-- Login-->
