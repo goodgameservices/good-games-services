@@ -92,10 +92,11 @@
                         <h2>
                             Account:
                         </h2>
+
+                    <p class="ProfileImage"></p>
                     <p class="text-white-50" id="Name"></p>
                     <p class="text-white-50" id="Email"></p>
                     <p class="text-white-50" id="ID"></p>
-                    <p class="text-white-50" id="ImageURL"></p>
                     <a href="#" onclick="signOut();">Sign out</a> 
                 </div>
             </div>
@@ -108,7 +109,8 @@
                     console.log("Google Account Email: " + profile.getEmail());
                     document.getElementById("Name").innerHTML = "Name: " + profile.getName();
                     document.getElementById("Email").innerHTML = "Email: " + profile.getEmail();
-                    document.getElementById("ImageURL").innerHTML = "ImageURL: " + profile.getImageUrl();
+                    var ProfileImageAPI = profile.getImageUrl();
+                    $(".ProfileImage").attr("src", ProfileImageAPI);
                     document.getElementById("ID").innerHTML = "Account ID: " + profile.getId(); 
                 }  
 
