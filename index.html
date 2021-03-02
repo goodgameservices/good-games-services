@@ -93,7 +93,7 @@
                             Account:
                         </h2>
 
-                    <p class="ProfileImage"></p>
+                    <img class="ProfileImageAPI">
                     <p class="text-white-50" id="Name"></p>
                     <p class="text-white-50" id="Email"></p>
                     <p class="text-white-50" id="ID"></p>
@@ -110,7 +110,7 @@
                     document.getElementById("Name").innerHTML = "Name: " + profile.getName();
                     document.getElementById("Email").innerHTML = "Email: " + profile.getEmail();
                     var ProfileImageAPI = profile.getImageUrl();
-                    $(".ProfileImage").attr("src", ProfileImageAPI);
+                    $(".ProfileImageAPI").attr("src", ProfileImageAPI);
                     document.getElementById("ID").innerHTML = "Account ID: " + profile.getId(); 
                 }  
 
