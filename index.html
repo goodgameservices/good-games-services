@@ -109,9 +109,9 @@
                     console.log("Google Account Email: " + profile.getEmail());
                     document.getElementById("Name").innerHTML = "Name: " + profile.getName();
                     document.getElementById("Email").innerHTML = "Email: " + profile.getEmail();
-                    var ProfileImageAPI = profile.getImageUrl();
-                    $(".ProfileImageAPI").attr("src", ProfileImageAPI);
                     document.getElementById("ID").innerHTML = "Account ID: " + profile.getId(); 
+                    var ProfileImageAPI = profile.getImageUrl();
+                    $("ProfileImageAPI").attr("src", ProfileImageAPI);
                 }  
 
                 function signOut() {
