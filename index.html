@@ -111,8 +111,7 @@
                     document.getElementById("Name").innerHTML = "Name: " + profile.getName();
                     document.getElementById("Email").innerHTML = "Email: " + profile.getEmail();
                     document.getElementById("ID").innerHTML = "Account ID: " + profile.getId(); 
-                    var ProfileImageAPI = profile.getImageUrl();
-                    $("ProfileImageAPI").attr("src", ProfileImageAPI);
+                    document.getElementById("ProfileImageAPI").innerHTML = profile.getImageUrl();
                 }  
 
                 function signOut() {
