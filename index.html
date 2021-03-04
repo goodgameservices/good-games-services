@@ -21,7 +21,6 @@
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <!-- Google Login verify Api -->
     <meta name="google-signin-client_id" content="622189447712-t0r0knt6ifo3qcqee0s0mbf1he9ltctj.apps.googleusercontent.com">
-    
 </head>
 <body>
     <!-- Navigation-->
@@ -116,7 +115,7 @@
                     console.log("Google Account Email: " + profile.getEmail());
                     document.getElementById("Name").innerHTML = "Name: " + profile.getName();
                     document.getElementById("Email").innerHTML = "Email: " + profile.getEmail();
-                    document.getElementById("ID").innerHTML = "Account ID: " + profile.getId(); 
+                    document.getElementById("ID").innerHTML = "Account ID: " + profile.getId();
                     document.getElementById("ProfileImageAPI").innerHTML = profile.getImageUrl();
                 }  
 
