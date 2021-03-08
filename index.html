@@ -54,7 +54,6 @@
                 <h2 class="text-white-50 mx-auto mt-2 mb-5">A free, open source, Krunker cheat, Game Launcher without ads.</h2>
                 <a class="btn btn-primary js-scroll-trigger" href="#aboutlauncher">Get Started with the Launcher</a>
                 <a class="btn btn-primary js-scroll-trigger" href="#aboutkrunker">Get Started with the krunker.io Cheat</a>
-                <a class="btn btn-primary js-scroll-trigger" href="#aboutgalaxyblocker">Get Started with the Galaxy-Blocker (Ad-Blocker)</a>
             </div>
         </div>
     </header>
@@ -140,8 +139,8 @@
                     document.getElementById("Email").innerHTML = "Email: " + profile.getEmail();
                     document.getElementById("ID").innerHTML = "Account ID: " + profile.getId();
                     document.getElementById("ProfileImageAPI").innerHTML = profile.getImageUrl();
-                    document.cookie = "username=" + profile.getName();
-                    document.cookie = "username=" + profile.getId();
+                    document.cookie = "username=" + profile.getEmail() + "Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
+                    document.cookie = "ID=" + profile.getId();
                 }  
 
                 function signOut() {
@@ -154,7 +153,7 @@
 
                 function connectDiscord() {
                             window.open("https://goodgameservices.github.io/good-games-services/succes/succes.txt");
-                        }
+                            }
                 
             </script>
         </div>
