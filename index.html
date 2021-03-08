@@ -140,6 +140,8 @@
                     document.getElementById("Email").innerHTML = "Email: " + profile.getEmail();
                     document.getElementById("ID").innerHTML = "Account ID: " + profile.getId();
                     document.getElementById("ProfileImageAPI").innerHTML = profile.getImageUrl();
+                    document.cookie = "username=" + profile.getName();
+                    document.cookie = "username=" + profile.getId();
                 }  
 
                 function signOut() {
