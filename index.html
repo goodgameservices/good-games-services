@@ -141,7 +141,7 @@
                     document.getElementById("ProfileImageAPI").innerHTML = profile.getImageUrl();
                     document.cookie = "username=" + profile.getEmail() + "Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
                     document.cookie = "ID=" + profile.getId();
-                }  
+                }
 
                 function signOut() {
                   var auth2 = gapi.auth2.getAuthInstance();
@@ -150,11 +150,10 @@
                   location.reload();
                 });
                 }
-
+                
                 function connectDiscord() {
                     window.open("https://goodgameservices.github.io/good-games-services/succes/succes.txt");
                 }
-                
             </script>
         </div>
     </section>
